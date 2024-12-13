@@ -1,0 +1,2782 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: "Nunito", sans-serif; */
+  /* font-family: "Merriweather", serif; */
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+p {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.btn2 {
+  background-color: #f0da69;
+  font-size: 16px;
+  width: 200px;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+.btn1 {
+  border: 1px solid #f0da69;
+  font-size: 16px;
+  width: 200px;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+.btn2:hover {
+  transition: all 1s;
+  background-color: black;
+  color: white;
+}
+
+.btn1:hover {
+  transition: all 0.7s;
+  background-color: black;
+  color: white;
+}
+
+.nav-container {
+  background-color: #f0da69;
+}
+
+.button {
+  background-color: #f0da69;
+}
+
+.doctor {
+  height: 93vh;
+}
+
+.container {
+  padding: 0px 90px;
+}
+
+.service__appointment {
+  border: 1px solid #B197FC;
+  border-radius: 8px;
+  padding: 10px;
+  width: 150px;
+}
+
+.service__ambulance {
+  border: 1px solid #74C0FC;
+  border-radius: 8px;
+  padding: 10px;
+  width: 150px;
+}
+
+.service__medicine {
+  border: 1px solid #FFD43B;
+  border-radius: 8px;
+  padding: 10px;
+  width: 150px;
+}
+
+.service__medical {
+  border: 1px solid #D6A2E8;
+  border-radius: 8px;
+  padding: 10px;
+  width: 150px;
+}
+
+.service__hospital {
+  border: 1px solid #f96666;
+  border-radius: 8px;
+  padding: 10px;
+  width: 150px;
+}
+
+.service__emergency {
+  border: 1px solid #69ce55;
+  border-radius: 8px;
+  padding: 10px;
+  width: 150px;
+}
+
+/* profile */
+.profile_card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  border: 2px dotted #f0da69;
+  margin-bottom: 20px;
+}
+
+/* collaboration css */
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.marquee-inner {
+  display: flex;
+  animation: marquee 20s linear infinite;
+  padding: 30px 90px;
+}
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* appointment */
+.appointment_input {
+  width: 100%;
+  border: 1px solid #ac98ed;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* login css */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 18px;
+  width: 300px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.job__image {
+  width: 500px;
+  border-radius: 18px;
+}
+
+.aid__card {
+  background-color: #9c88ff;
+  padding: 12px 0px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.aid__card p {
+  font-size: 20px;
+  padding: 3px;
+  color: white;
+  font-weight: 500;
+}
+
+/* tabs */
+/* src/Tabs.css */
+.tabs {
+  font-family: Arial, sans-serif;
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.tab-buttons button {
+  padding: 10px 20px;
+  margin-right: 5px;
+  border: none;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+}
+
+.tab-buttons button.active,
+.tab-buttons button:hover {
+  background-color: #FFD43B;
+}
+
+.tab__card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+
+/*  */
+.doctor_profile img {
+  height: 200px;
+  width: 200px;
+}
+
+.tabs_card {
+  height: 90vh;
+  overflow: auto;
+  padding-bottom: 20px;
+}
+
+.doctor__card {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 13px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* bed sec */
+.beds_card_sec {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: auto;
+}
+
+.bed_card {
+  text-align: center;
+  width: 280px;
+  padding: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 13px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+}
+
+.bed_card img {
+  margin-bottom: 10px;
+}
+
+.bed_card_header {
+  padding: 5px;
+}
+
+.bed_details img {
+  height: 200px;
+  margin: auto;
+}
+
+/* hospital card section */
+.hospital_section {
+  display: grid;
+  column-gap: 0px;
+  grid-template-columns: auto auto auto auto;
+  padding-bottom: 50px;
+}
+
+.hospital_name {
+  white-space: nowrap;
+  width: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.emergency_title {
+  white-space: nowrap;
+  width: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hospital_image img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.08);
+  border: 1px solid #7F8C8D;
+  width: 400px;
+  height: 400px;
+  border-radius: 8px;
+}
+
+.hospital_details {
+  border: 1px solid #7F8C8D;
+  height: 400px;
+  border-radius: 8px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+/* job_section_card */
+.job_section_card {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  row-gap: 40px;
+}
+
+.company_img {
+  border-radius: 50px;
+}
+
+/* about */
+.about_sec {
+  margin: auto;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 40px 0px;
+}
+
+.features_card {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 13px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  border: 1px solid #FFD43B;
+  padding: 15px 10px;
+  margin: auto;
+  width: 300px;
+  height: 200px;
+}
+
+.features_card h1 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* analytics */
+.analytics {
+  margin: 50px 0px;
+  color: black;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.analytics_card {
+  margin: auto;
+}
+
+/* working steps */
+.working_process {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* appointment */
+.appointment_sec {
+  background-color: #bcdcf6;
+  padding: 20px 0px;
+}
+
+.appointment_sec_img img {
+  height: 300px;
+}
+
+/* emergency */
+.emergency {
+  padding: 30px 0px;
+  background-color: #e7f1ff;
+}
+
+.emergency_card {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+  padding: 15px;
+  gap: 15px;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.emergency_icon {
+  background-color: #448df2;
+  border-radius: 50px;
+  padding: 10px;
+  color: white;
+
+}
+
+/* workin process */
+.working_sec {
+  background-color: #f9f1c8;
+}
+
+.process_card p {
+  background-color: #9c88ff;
+  color: white;
+  width: fit-content;
+  padding: 10px 13px;
+  border-radius: 50px;
+}
+
+/* contact */
+.contact_card {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+  width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ac98ed;
+}
+
+.contact_card:hover {
+  background-color: #FFD43B;
+  animation: ease-in-out 0.5s;
+  border: none;
+  transition: all 0.5s;
+  border-radius: 50% 50% 10% 10%;
+}
+
+.contact_icon {
+  background-color: #448df2;
+  color: white;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.appointment_img {
+  margin: auto;
+}
+
+.advanced_life_support {
+  box-shadow: 0 2px 4px 0 #f0da69, 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+  width: 400px;
+}
+
+/* feedback */
+.feedback_sec {
+  margin: 40px 0px;
+}
+
+.feedback {
+  margin: auto;
+  padding: 15px;
+  width: 800px;
+}
+
+.star_rating {
+  margin-top: 15px;
+}
+
+.star_rating p {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.rating {
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1px solid #f0da69;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.review {
+  border: 1px solid #f0da69;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.review_sec {
+  margin-top: 10px;
+}
+
+.title_border {
+  border-left: 4px solid red;
+  padding-left: 4px;
+}
+
+/* vision and mission */
+.mission {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 100px;
+}
+
+.mission img {
+  width: 450px;
+  border-radius: 8px;
+}
+
+.mission_describe {
+  margin: auto;
+}
+
+.vision {
+  display: flex;
+  gap: 40px;
+}
+
+.vision img {
+  width: 450px;
+  border-radius: 8px;
+}
+
+.vision_describe {
+  margin: auto;
+}
+
+/* news and update */
+.news_section {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  align-items: center;
+}
+
+.news_section_card p {
+  white-space: nowrap;
+  width: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.news_section_card h2 {
+  font-size: 22px;
+  white-space: nowrap;
+  width: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* job details */
+.job_description_sec {
+  box-shadow: 0 1px 2px 0 #b7b6b2, 0 1px 4px 0 rgba(0, 0, 0, 0.19);
+  padding: 30px;
+}
+
+.job_title_card {
+  box-shadow: 0 1px 2px 0 #b7b6b2, 0 1px 4px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  margin-bottom: 30px;
+  padding: 10px;
+  height: 200px;
+}
+
+.date_sec {
+  width: 280px;
+  height: 90px;
+  box-shadow: 2px 1px 2px 1px #f0da69, 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+}
+
+
+
+/* admin panel */
+/* .admin_container {
+  margin: 20px;
+} */
+
+.update_profile_container {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 90vh;
+  width: 90%;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.tab_link {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.tab_link li {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* .tab_link_active:active {
+  background-color: #9c88ff;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 10px;
+} */
+
+.doctor_profile-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  border: 1px solid #707094;
+}
+
+.doctor_profile-card img {
+  height: 70px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.appointment_card_sec {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 60px;
+  row-gap: 40px;
+  margin: 20px;
+}
+
+.appointment_card {
+  background-color: #9c88ff;
+  color: white;
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  width: 300px;
+}
+
+.appointment_card h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.appointment_card p {
+  font-size: 22px;
+}
+
+.appointment_card:hover {
+  background-color: #6b52eb;
+}
+
+.my_appointment_card {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+  border-radius: 5px;
+  border: 1px solid #bcc3c4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.my_appointment_card img {
+  border-radius: 5px 0px 0px 5px;
+  height: 180px;
+  border-right: 1px solid #bcc3c4;
+}
+
+/* .appointment_list_sec {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100vh;
+} */
+
+.appointment_list {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #d9e2e2;
+  margin-bottom: 10px;
+  align-items: center;
+  border-radius: 5px;
+  margin: 20px 30px;
+  padding: 5px 10px;
+
+}
+
+.doctor_card {
+  background-color: #F5C469;
+  color: white;
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  width: 300px;
+}
+
+.doctor_card h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.doctor_card p {
+  font-size: 22px;
+}
+
+.doctor_card:hover {
+  background-color: #F4C724;
+}
+
+/*  */
+.ambulance_card {
+  background-color: #e67bae;
+  color: white;
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  width: 300px;
+}
+
+.ambulance_card h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.ambulance_card p {
+  font-size: 22px;
+}
+
+.ambulance_card:hover {
+  background-color: #E74292;
+}
+
+/*  */
+.earning_card {
+  background-color: #707094;
+  color: white;
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  width: 300px;
+}
+
+.earning_card h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.earning_card p {
+  font-size: 22px;
+}
+
+.earning_card:hover {
+  background-color: #2B2B52;
+}
+
+/*  */
+.beds_card {
+  background-color: #79dede;
+  color: white;
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  width: 300px;
+}
+
+.beds_card h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.beds_card p {
+  font-size: 22px;
+}
+
+.beds_card:hover {
+  background-color: #00CCCD;
+}
+
+.emergency_hospital__card {
+  background-color: #f3817f;
+  color: white;
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  width: 300px;
+}
+
+.emergency_hospital__card h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.emergency_hospital__card p {
+  font-size: 22px;
+}
+
+.emergency_hospital__card:hover {
+  background-color: #ff6361;
+}
+
+.rating_card {
+  background-color: #6aaa96;
+  color: white;
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  width: 300px;
+}
+
+.rating_card h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.rating_card p {
+  font-size: 22px;
+}
+
+.rating_card:hover {
+  background-color: #488f31;
+}
+
+.total_user_card {
+  background-color: #abb9bb;
+  color: white;
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  width: 300px;
+}
+
+.total_user_card h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.total_user_card p {
+  font-size: 22px;
+}
+
+.total_user_card:hover {
+  background-color: #7F8C8D;
+}
+
+.hospitals_card {
+  background-color: #b376cc;
+  color: white;
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  width: 300px;
+}
+
+.hospitals_card h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hospitals_card p {
+  font-size: 22px;
+}
+
+.hospitals_card:hover {
+  background-color: #8E44AD;
+}
+
+.latest_appointment {
+  margin: auto;
+  width: 100%;
+}
+
+.tablefixed {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 12px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  overflow: auto;
+  height: 600px;
+}
+
+.tablefixed thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* Just common table stuff. Really. */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 8px 16px;
+  font-size: 14px;
+  text-align: center;
+}
+
+th {
+  background: #448df2;
+  color: white;
+}
+
+.doctor_name {
+  border: 1px solid #448df2;
+  border-radius: 5px;
+}
+
+.doctor_name select {
+  width: 100%;
+  font-size: 1.15rem;
+  padding: 3px 10px 3px 10px;
+  background-color: #fff;
+  border: 1px solid #caced1;
+  border-radius: 0.25rem;
+  color: #000;
+  cursor: pointer;
+}
+
+.action_icon {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+
+.appointment_list_sec {
+  width: 90%;
+}
+
+.ambulance_sec {
+  margin: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+.ambulance_img {
+  display: flex;
+  justify-items: space-evenly;
+}
+
+.ambulance_img img {
+  width: 300px;
+}
+
+.ambulance_list {
+  width: 90%;
+  margin: auto;
+}
+
+.ambulance_form {
+  margin-top: 30px;
+  width: 90%;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.ambulance_form_sec {
+  margin: 30px 0px;
+
+}
+
+.ambulance_form input {
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.ambulance_type {
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.job_form_sec {
+  margin: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100vh;
+
+}
+
+.editor_sec {
+  padding: 15px;
+  border-radius: 5px;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.editor_sec input {
+  margin-bottom: 30px;
+}
+
+
+.add_hospital_sec {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: auto;
+  width: 80%;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.add_hospital_sec input,
+select {
+  width: 100%;
+  border: 1px solid #448df2;
+  margin-bottom: 20px;
+  padding: 7px;
+  border-radius: 4px;
+}
+
+.all_hospital {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+.user_profile_card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 300px;
+  margin: auto;
+}
+
+.notification_sec {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+  width: 87%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 90px;
+  border-radius: 10px;
+}
+
+.notifications {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.notification_sec h1 {
+  color: white;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.form_apply {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.franchise_sec {
+  margin-top: 90px;
+  margin-bottom: 40px;
+}
+
+.franchise_intro {
+  display: flex;
+  justify-content: space-between;
+}
+
+.franchise_intro_left {
+  width: 600px;
+  margin: auto;
+}
+
+.franchise_intro_left img {
+  height: 350px;
+  border-radius: 10px;
+}
+
+.franchise_intro_right {
+  width: 800px;
+  margin: auto;
+}
+
+.franchise_intro_right h6 {
+  width: fit-content;
+  padding: 1px 5px;
+  border-radius: 2px;
+  color: white;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
+}
+
+/*  */
+
+
+/*  */
+.promotion_sec {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 10px;
+  margin: auto;
+  padding: 20px;
+  margin-bottom: 70px;
+}
+
+.promotion_card {
+  text-align: center;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+  width: 300px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.promotion_card img {
+  width: 300px;
+  height: 250px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+/*  */
+.all_hospital_sec {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.delete_icon {
+  background-color: red;
+  border-radius: 50px;
+  width: fit-content;
+  color: white;
+  padding: 5px;
+}
+
+
+
+.equipment_sec {
+  margin: auto;
+  padding: 20px;
+  border: 2px dotted #f0da69;
+  border-radius: 8px;
+}
+
+
+
+.equipment_sec_form input,
+textarea {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+.awarness_details {
+  border: 1px solid #e1e7e8;
+  border-radius: 5px;
+  padding: 5px;
+  align-items: center;
+}
+
+.awarness_details p {
+  color: #7F8C8D;
+  font-size: 14px;
+}
+
+.awarness_details span {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.team_card_sec {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  row-gap: 10px;
+  margin-bottom: 40px;
+}
+
+.team_card {
+  width: 320px;
+  border: 3px dotted #f0da69;
+  border-radius: 5px;
+  height: 410px;
+}
+
+.team_card img {
+  background-color: #81adea;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.team_card img:hover {
+  background-color: #ecdfa1;
+}
+
+.team_card_icon {
+  margin-top: 15px;
+}
+
+.textbottom {
+  border-bottom: 4px solid red;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* doctor card */
+/* https://freecodez.com */
+:root {
+  --color: #0066ff;
+  --color-hover: #000000;
+}
+
+
+.d_card {
+  width: 280px;
+  height: 380px;
+  background: white;
+  border-radius: 30px;
+  padding: 3px;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.5s ease-in-out;
+}
+
+.d_card .mail {
+  position: absolute;
+  right: 2rem;
+  top: 1.4rem;
+  background: transparent;
+  border: none;
+}
+
+.d_card .mail i {
+  color: #f0da69;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.d_card .mail i:hover {
+  color: var(--color-hover);
+}
+
+.d_card .profile-pic {
+  position: absolute;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  top: 3px;
+  left: 3px;
+  border-radius: 29px;
+  z-index: 1;
+  border: 0px solid #f0da69;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out 0.2s, z-index 0.5s ease-in-out 0.2s;
+  cursor: pointer;
+  background-color: rgb(0, 198, 220);
+}
+
+.d_card:hover {
+  border-top-left-radius: 55px;
+}
+
+.d_card:hover .bottom {
+  top: 20%;
+  border-radius: 80px 29px 29px 29px;
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+}
+
+.d_card:hover .profile-pic {
+  width: 100px;
+  height: 100px;
+  aspect-ratio: 1;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+  z-index: 3;
+  border: 7px solid #f0da69;
+  box-shadow: rgba(96, 75, 74, 0.1882352941) 0px 5px 5px 0px;
+  transition: all 0.5s ease-in-out, z-index 0.5s ease-in-out 0.1s;
+}
+
+.d_card:hover .profile-pic:hover {
+  transform: scale(1.3) translate(-10px, -10px);
+  border-radius: 0px;
+}
+
+.d_card .bottom {
+  position: absolute;
+  bottom: 3px;
+  left: 3px;
+  right: 3px;
+  background: #f0da69;
+  top: 80%;
+  border-radius: 29px;
+  z-index: 2;
+  box-shadow: rgba(96, 75, 74, 0.1882352941) 0px 5px 5px 0px inset;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+.d_card .bottom .content {
+  position: absolute;
+  bottom: 80px;
+  left: 1.5rem;
+  right: 1.5rem;
+  height: 160px;
+}
+
+.d_card .bottom .content .name {
+  display: block;
+  font-size: 1.2rem;
+  color: rgb(5, 5, 5);
+  font-weight: bold;
+}
+
+.d_card .bottom .content .about-me {
+  margin: auto;
+  font-size: 0.9rem;
+  color: rgb(0, 0, 0);
+}
+
+.d_card .bottom .bottom-bottom {
+  position: absolute;
+  bottom: 13px;
+  left: 1.5rem;
+  right: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.d_card .bottom .bottom-bottom .social-links-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.d_card .bottom .bottom-bottom .social-links-container i {
+  font-size: 20px;
+  fill: white;
+  filter: drop-shadow(0 5px 5px rgba(165, 132, 130, 0.1333333333));
+  cursor: pointer;
+}
+
+.d_card .bottom .bottom-bottom .social-links-container i:hover {
+  color: var(--color-hover);
+  transform: scale(1.2);
+}
+
+.d_card .bottom .bottom-bottom .button {
+  background: white;
+  color: #f0da69;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.6rem;
+  font-weight: 600;
+  padding: 0.4rem 0.6rem;
+  box-shadow: rgba(165, 132, 130, 0.1333333333) 0px 5px 5px 0px;
+}
+
+.d_card .bottom .bottom-bottom .button:hover {
+  background: var(--color-hover);
+  color: white;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.paymenthistory_sec {
+  margin: auto;
+}
+
+.user_profile_card_sec table {
+  width: 100%;
+}
+
+/* weather card */
+.weather_sec {
+  width: 743px;
+  height: 227px;
+  background-color: #FFECC8;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.weather_img {
+  margin-top: 16px;
+
+}
+
+.weather_img img {
+  border-radius: 0px 10px 10px 0px;
+}
+
+.weather_details {
+  padding: 15px;
+}
+
+.edit_icon {
+  background-color: #707094;
+  color: white;
+  border-radius: 10px 50% 50% 50%;
+  height: fit-content;
+  padding: 8px;
+}
+
+/*  */
+/* Define the width of the scrollbar */
+
+html {
+  scrollbar-width: medium;
+  scrollbar-color: #ac98ed transparent;
+  border-radius: 50px;
+}
+
+
+
+
+/* responsive of welcome */
+@media only screen and (max-width: 480px) {
+  .right img {
+    height: 400px;
+  }
+
+  /* feedback */
+  .feedback {
+    margin: auto;
+    padding: 15px;
+    width: fit-content;
+  }
+
+  .welcome__section {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .welcome__section h1 {
+    font-size: 34px;
+  }
+
+  .services {
+    padding: 0px;
+    margin: 0px 20px;
+    align-items: center;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 150px 150px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0px;
+  }
+
+  .left {
+    width: 80%;
+    align-items: center;
+  }
+
+  .right {
+    width: 80%;
+    margin: auto;
+  }
+
+  .left h1 {
+    font-size: 28px;
+  }
+
+  .testinomial p {
+    width: 80%;
+    margin: auto;
+  }
+
+  .testinomial_section {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+  }
+
+  .news_section {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+  }
+
+  .news_section_card {
+    margin: auto;
+  }
+
+  .collab_section {
+    align-items: center;
+  }
+
+  .login_section {
+    width: 80%;
+  }
+
+  .marquee {
+    width: 90%;
+    margin: auto;
+  }
+
+  /* faq */
+  .faq_sec {
+    width: 90%;
+    margin: auto;
+  }
+
+  .faq_sec_title {
+    width: 100%;
+    margin: auto;
+  }
+
+  /* features */
+  .features {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  /* our team */
+  .team_card_sec {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .team_card {
+    width: 320px;
+    border: 3px dotted #f0da69;
+    border-radius: 5px;
+    height: 430px;
+  }
+
+  .team_card img {
+    background-color: #81adea;
+    border-radius: 5px 5px 0px 0px;
+  }
+
+  .team_card img:hover {
+    background-color: #ecdfa1;
+  }
+
+  .team_card_icon {
+    margin-top: 15px;
+  }
+
+  /* tabs card */
+
+  .tabs_card {
+    display: grid;
+    column-gap: 50px;
+    margin: auto;
+    grid-template-columns: auto;
+  }
+
+  .tabs {
+    margin: auto;
+    width: 90%;
+  }
+
+  .doctor__card {
+    width: fit-content;
+    height: 220px;
+  }
+
+  .doctor_profile {
+    margin: auto;
+  }
+
+  .doctor_profile img {
+    height: 200px;
+    width: 150px;
+  }
+
+  .doctor_details {
+    width: 100%;
+  }
+
+  /* beds section */
+  .beds_sec {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: auto;
+  }
+
+
+  .beds_chart {
+    width: auto;
+    margin: 30px;
+  }
+
+  .bed_card {
+    width: 250px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .beds_card_sec {
+    display: grid;
+    grid-template-columns: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .beds_container {
+    margin: auto;
+  }
+
+  /* admin side equipment */
+  .equipment_sec {
+    display: flex;
+    margin: auto;
+    padding: 20px;
+    border: 2px dotted #f0da69;
+    border-radius: 8px;
+  }
+
+  .equipment_sec h1 {
+    font-size: 18px;
+  }
+
+  .equipment_sec_form input,
+  textarea {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 15px;
+  }
+
+  /* ambulance details */
+  .ambulance_deatils_sec {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .advanced_life_support {
+    margin: auto;
+    width: 300px;
+  }
+
+  /* login */
+  .login_sec {
+    margin: 10px auto;
+    width: 90%;
+  }
+
+  .login_form {
+    margin: 0px;
+  }
+
+  .login__card {
+    width: 90%;
+    margin: auto;
+  }
+
+  /* job section card */
+  .job_section_card {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  /* working steps */
+  .working_process {
+    margin: 10px;
+    padding: 0px 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* emergency */
+  .emergency {
+    padding: 30px;
+  }
+
+  /* analytics */
+  .analytics {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 40px;
+  }
+
+  .analytics_card {
+    margin: auto;
+  }
+
+  /* contact page */
+
+  .right_contact_section {
+    align-items: center;
+    margin: auto;
+    width: 80%;
+  }
+
+  .left_contact_section {
+    align-items: center;
+    margin: auto;
+    width: 80%;
+  }
+
+  /* job section */
+  .job_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right_job_section {
+    width: 80%;
+  }
+
+  .left_job_section {
+    width: 80%;
+  }
+
+  .job_section_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .job_info {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 30px;
+    margin: auto;
+  }
+
+  .job_description_sec {
+    margin: auto;
+    width: 90%;
+  }
+
+  .job_title_card {
+    margin: auto;
+    width: 90%;
+  }
+
+  /* about */
+  .about_sec_container {
+    margin-top: 96px;
+  }
+
+  .about_sec {
+    margin: auto;
+    padding: auto;
+    width: 90%;
+  }
+
+  /* hospital page */
+  .hospital_section {
+    display: grid;
+    column-gap: 50px;
+    margin: auto;
+    grid-template-columns: auto;
+  }
+
+  /* hospitals details */
+  .hospital_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hospital_image {
+    width: auto;
+  }
+
+  .hospital_details {
+    width: 90%;
+    height: fit-content;
+  }
+
+  .hospital_details h1 {
+    font-size: 28px;
+  }
+
+  .appointment_img {
+    margin: auto;
+  }
+
+  /*  */
+  .tab-buttons {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 10px;
+  }
+
+  /* contact_card_sec */
+  .contact_card_sec {
+    margin-top: 20px;
+  }
+
+  .contact_card {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* equipment section */
+  .equipment_sec {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+  }
+
+  /* aid awarness */
+  .aid_container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .scheme_container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .hyginee_container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  /* appointment in about */
+  .appointment_sec {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .appointment_sec_img {
+    width: 150px;
+    margin: auto;
+  }
+
+  .appointment_sec_img img {
+    height: 150px;
+  }
+
+  .appointment_sec_text h1 {
+    font-size: 22px;
+  }
+
+  .emergency_helpline_sec {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 10px;
+  }
+
+  /* vision and mission */
+  .mission {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 30px;
+  }
+
+  .mission img {
+    margin: auto;
+    width: 350px;
+    border-radius: 8px;
+  }
+
+  .mission_describe {
+    margin: auto;
+    padding: 0px 30px;
+  }
+
+  .vision {
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  .vision img {
+    margin: auto;
+    width: 350px;
+    border-radius: 8px;
+  }
+
+  .vision_describe {
+    margin: auto;
+    padding: 0px 30px;
+  }
+
+  .promotion_sec {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 70px;
+  }
+
+  .promotion_card {
+    text-align: center;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+    width: 300px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  .promotion_card img {
+    width: 300px;
+    height: 250px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  /* awarness */
+  .awarness_title {
+    width: 90%;
+    margin: auto;
+    font-size: 24px;
+  }
+
+  .awarness_details {
+    border: 1px solid #e1e7e8;
+    border-radius: 5px;
+    padding: 5px 15px;
+    align-items: center;
+  }
+
+  .awarness_details p {
+    color: #7F8C8D;
+    font-size: 11px;
+  }
+
+  .awarness_details span {
+    font-weight: bold;
+    font-size: 11px;
+  }
+
+  .awarness_description {
+    width: 90%;
+    margin: auto;
+  }
+
+  .awarness_img img {
+    width: 90%;
+    height: 350px;
+    margin: auto;
+  }
+
+  /* profile_card  */
+  .profile_card {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .appointment_card_sec {
+    display: grid;
+    grid-template-columns: auto;
+    margin: auto;
+  }
+
+}
+
+@media only screen and (min-device-width: 481px) and (max-width: 768px) {
+  .welcome__section {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .welcome__section h1 {
+    font-size: 34px;
+    text-align: center;
+  }
+
+  .services {
+    padding: 0px;
+    margin: 0px 40px;
+    align-items: center;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .left {
+    width: 80%;
+    align-items: center;
+  }
+
+  .right {
+    width: 80%;
+    margin: auto;
+  }
+
+  .left h1 {
+    font-size: 34px;
+  }
+
+  .testinomial p {
+    width: 80%;
+    margin: auto;
+  }
+
+  .testinomial_section {
+    align-items: center;
+  }
+
+  .news_section {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+  }
+
+  .news_section_card {
+    margin: auto;
+  }
+
+  .collab_section {
+    align-items: center;
+  }
+
+  .login_section {
+    width: 80%;
+  }
+
+  .faq_sec_title {
+    width: 100%;
+    margin: auto;
+  }
+
+  .team_card_sec {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* features */
+  .features {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .promotion_sec {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 70px;
+  }
+
+  /* ambulance */
+  /* tabs card */
+
+  .tabs_card {
+    display: grid;
+    column-gap: 50px;
+    margin: auto;
+    grid-template-columns: auto;
+  }
+
+  .doctor__card {
+    width: 500px;
+    height: 250px;
+  }
+
+  .doctor_profile {
+    margin: auto;
+  }
+
+  .doctor_profile img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .doctor_details {
+    width: 100%;
+  }
+
+  /* beds section */
+  .beds_sec {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: auto;
+    width: 300px;
+  }
+
+  .beds_chart {
+    width: auto;
+    margin: 30px;
+  }
+
+  .bed_card {
+    width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .beds_card_sec {
+    display: grid;
+    grid-template-columns: auto;
+    margin: auto;
+  }
+
+  .beds_container {
+    margin: auto;
+  }
+
+  /* ambulance details */
+  .ambulance_deatils_sec {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .advanced_life_support {
+    margin: auto;
+  }
+
+  /* login */
+  .login_sec {
+    margin: 10px auto;
+  }
+
+  .login_form {
+    margin: 0px;
+  }
+
+  /* job section card */
+  .job_section_card {
+    display: grid;
+    column-gap: 50px;
+    row-gap: 30px;
+    margin: auto;
+    grid-template-columns: auto auto;
+
+  }
+
+  /* emergency */
+  .emergency {
+    padding: 30px;
+  }
+
+  /* working steps */
+
+
+  /* analytics */
+  .analytics {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 40px;
+  }
+
+  .analytics_card {
+    margin: auto;
+  }
+
+  /* about */
+  .about_sec {
+    margin: auto;
+    padding: auto;
+    width: 90%;
+  }
+
+  /* contact page */
+
+  .right_contact_section {
+    align-items: center;
+    margin: auto;
+    width: 80%;
+  }
+
+  .left_contact_section {
+    align-items: center;
+    margin: auto;
+    width: 80%;
+  }
+
+  /* job section */
+  .job_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right_job_section {
+    width: 90%;
+  }
+
+  .left_job_section {
+    width: 90%;
+  }
+
+  .contact_card_sec {
+    margin-top: 20px;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: auto auto;
+  }
+
+  .job_info {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 30px;
+  }
+
+  /* .job_section_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  } */
+
+  /* hospital page */
+  .hospital_section {
+    /* display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 40px; */
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  /* hospitals details */
+  .hospital_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hospital_image {
+    width: auto;
+  }
+
+  .hospital_details {
+    width: 100%;
+  }
+
+  .hospital_details h1 {
+    font-size: 33px;
+  }
+
+  .appointment_img {
+    margin: auto;
+  }
+
+  /* .about_sec_container {
+    margin-left: auto;
+    margin-right: auto;
+  } */
+
+  /* aid awarness */
+  .aid_container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .scheme_container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .hyginee_container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .aid__card {
+    width: 400px;
+  }
+
+  /* appointment in about */
+  .appointment_sec {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .appointment_sec_img {
+    width: 200px;
+    margin: auto;
+  }
+
+  .appointment_sec_img img {
+    height: 200px;
+  }
+
+  .appointment_sec_text h1 {
+    font-size: 22px;
+  }
+
+  /* vision and mission */
+  .mission {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 30px;
+  }
+
+  .mission img {
+    margin: auto;
+    width: 500px;
+    border-radius: 8px;
+  }
+
+  .mission_describe {
+    margin: auto;
+    padding: 0px 30px;
+  }
+
+  .vision {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  .vision img {
+    margin: auto;
+    width: 500px;
+    border-radius: 8px;
+  }
+
+  .vision_describe {
+    margin: auto;
+    padding: 0px 30px;
+  }
+}
+
+@media only screen and (min-device-width: 769px) and (max-width: 1279px) {
+  .welcome__section {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .welcome__section h1 {
+    font-size: 34px;
+    text-align: center;
+  }
+
+  .services {
+    padding: 0px;
+    margin: 0px 40px;
+    align-items: center;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .left {
+    width: 80%;
+    align-items: center;
+  }
+
+  .right {
+    width: 80%;
+    margin: auto;
+  }
+
+  .left h1 {
+    font-size: 34px;
+  }
+
+  .testinomial p {
+    width: 80%;
+    margin: auto;
+  }
+
+  .testinomial_section {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+  }
+
+  .news_section {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+  }
+
+  .news_section_card {
+    margin: auto;
+  }
+
+  .collab_section {
+    align-items: center;
+    width: 80%;
+  }
+
+  .login_section {
+    width: 80%;
+  }
+
+  /* features */
+  .features {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .promotion_sec {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 70px;
+  }
+
+  /* ambulance */
+  /* tabs card */
+
+  .tabs_card {
+    display: grid;
+    column-gap: 50px;
+    margin: auto;
+    grid-template-columns: auto;
+  }
+
+  .doctor__card {
+    width: 500px;
+    height: 250px;
+  }
+
+  .doctor_profile {
+    margin: auto;
+  }
+
+  .doctor_profile img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .doctor_details {
+    width: 100%;
+  }
+
+  /* beds section */
+  .beds_sec {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: auto;
+  }
+
+  .beds_chart {
+    width: auto;
+    margin: 30px;
+  }
+
+  .bed_card {
+    width: 300px;
+  }
+
+  .beds_card_sec {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .beds_container {
+    margin: auto;
+  }
+
+  /* ambulance details */
+  .ambulance_deatils_sec {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .advanced_life_support {
+    margin: auto;
+  }
+
+  /* login */
+  .login_sec {
+    margin: 10px auto;
+  }
+
+  .login_form {
+    margin: 0px;
+  }
+
+  /* job section card */
+  .job_section_card {
+    display: grid;
+    column-gap: 50px;
+    row-gap: 30px;
+    margin: auto;
+    grid-template-columns: auto auto;
+
+  }
+
+  /* emergency */
+  .emergency {
+    padding: 30px;
+  }
+
+  /* working steps */
+
+
+  /* analytics */
+  .analytics {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 40px;
+  }
+
+  .analytics_card {
+    margin: auto;
+  }
+
+  /* about */
+  .about_sec {
+    margin: auto;
+    padding: auto;
+    width: 90%;
+  }
+
+  /* contact page */
+
+  .right_contact_section {
+    align-items: center;
+    margin: auto;
+    width: 80%;
+  }
+
+  .left_contact_section {
+    align-items: center;
+    margin: auto;
+    width: 80%;
+  }
+
+  /* job section */
+  .job_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right_job_section {
+    width: 90%;
+  }
+
+  .left_job_section {
+    width: 90%;
+  }
+
+  .contact_card_sec {
+    margin-top: 20px;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: auto auto;
+  }
+
+  .job_info {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 30px;
+  }
+
+  /* .job_section_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  } */
+
+  /* hospital page */
+  .hospital_section {
+    /* display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 40px; */
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  /* hospitals details */
+  .hospital_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hospital_image {
+    width: auto;
+  }
+
+  .hospital_details {
+    width: 100%;
+  }
+
+  .hospital_details h1 {
+    font-size: 33px;
+  }
+
+  .appointment_img {
+    margin: auto;
+  }
+
+  /* .about_sec_container {
+    margin-left: auto;
+    margin-right: auto;
+  } */
+
+  /* aid awarness */
+  .aid_container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .scheme_container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .hyginee_container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .aid__card {
+    width: 400px;
+  }
+
+  .faq_sec_title {
+    width: 100%;
+    margin: auto;
+  }
+
+  /* appointment in about */
+  .appointment_sec {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .appointment_sec_img {
+    width: 200px;
+    margin: auto;
+  }
+
+  .appointment_sec_img img {
+    height: 200px;
+  }
+
+  .appointment_sec_text h1 {
+    font-size: 22px;
+  }
+
+  /* vision and mission */
+  .mission {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 30px;
+  }
+
+  .mission img {
+    margin: auto;
+    width: 500px;
+    border-radius: 8px;
+  }
+
+  .mission_describe {
+    margin: auto;
+    padding: 0px 30px;
+  }
+
+  .vision {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  .vision img {
+    margin: auto;
+    width: 500px;
+    border-radius: 8px;
+  }
+
+  .vision_describe {
+    margin: auto;
+    padding: 0px 30px;
+  }
+}
