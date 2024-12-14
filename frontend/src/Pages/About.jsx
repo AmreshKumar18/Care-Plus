@@ -38,12 +38,15 @@ const About = () => {
           <p className="title_border">About Us</p>
           <h1>The Great Place Of Hospital Center</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
-            aut recusandae, dignissimos atque aspernatur neque ipsum temporibus
-            a numquam sequi molestiae, illo rem sit natus officia. Officiis,
-            fugiat velit ipsa et perspiciatis odit! Nostrum amet et at.
-            Excepturi esse, eveniet, minima facere totam architecto dolores
-            quasi iste ea sit optio?
+            At our hospital center, we are committed to providing exceptional
+            healthcare services in a compassionate and patient-focused
+            environment. Our state-of-the-art facilities, combined with a
+            dedicated team of skilled medical professionals, ensure that every
+            patient receives personalized care tailored to their unique needs.
+            We strive to create a welcoming and supportive atmosphere, where
+            health, healing, and innovation come together to deliver the best
+            possible outcomes. Your well-being is our mission, and we are here
+            to serve you with excellence and integrity.
           </p>
           <div className=" mt-6">
             <div className=" flex gap-3 mb-3">
@@ -71,20 +74,23 @@ const About = () => {
       </div>
 
       {/* mission and vision */}
-      <div className=" container">
-        <h1 className=" text-center font-bold mb-5 mt-10">Mission & Vision</h1>
+      <div className=" container ">
+        <div className="header_txt">
+          <h1 className="text-center font-bold mb-5 mt-10">Mission & Vision</h1>
+        </div>
         <div className=" mission">
           <img src={mission} alt="" />
           <div className=" mission_describe">
             <h1 className=" font-bold">Mission</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-              doloribus sunt ipsa, distinctio voluptatibus quod ipsum soluta
-              expedita natus explicabo rem maxime amet obcaecati, cumque ratione
-              eligendi suscipit tempore enim dignissimos reprehenderit fugiat
-              aspernatur temporibus? Blanditiis, atque odio? Recusandae impedit
-              veritatis repellat nihil expedita eveniet soluta amet tenetur,
-              fuga sed!
+              Our mission is to revolutionize healthcare by delivering
+              high-quality, patient-centered services with compassion,
+              innovation, and excellence. We aim to provide accessible and
+              affordable care to everyone, empowering individuals and families
+              to lead healthier, happier lives. By fostering a culture of trust,
+              respect, and continuous improvement, we strive to set new
+              standards in medical care and make a meaningful difference in the
+              communities we serve.
             </p>
           </div>
         </div>
@@ -92,13 +98,14 @@ const About = () => {
           <div className=" vision_describe">
             <h1 className=" font-bold">Vision</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-              doloribus sunt ipsa, distinctio voluptatibus quod ipsum soluta
-              expedita natus explicabo rem maxime amet obcaecati, cumque ratione
-              eligendi suscipit tempore enim dignissimos reprehenderit fugiat
-              aspernatur temporibus? Blanditiis, atque odio? Recusandae impedit
-              veritatis repellat nihil expedita eveniet soluta amet tenetur,
-              fuga sed!
+              Our vision is to be a global leader in healthcare, setting the
+              benchmark for excellence in patient care, innovation, and medical
+              research. We aspire to create a world where everyone has access to
+              advanced and compassionate healthcare, enabling individuals to
+              achieve their highest potential for health and well-being. By
+              embracing cutting-edge technology and fostering a culture of
+              empathy, integrity, and collaboration, we aim to transform lives
+              and shape the future of medicine.
             </p>
           </div>
           <img src={vision} alt="" />
@@ -107,9 +114,11 @@ const About = () => {
 
       {/* features */}
       <div className=" container my-24">
-        <h1 className="textbottom text-center sm:mb-3 lg:mb-8">
-          Solutions We Offer
-        </h1>
+        <div className="heading_txt">
+          <h1 className="textbottom text-center sm:mb-3 lg:mb-8">
+            Solutions We Offer
+          </h1>
+        </div>
         <div className="features">
           <div className="features_card text-center">
             <img className=" w-20 m-auto" src={doctor_icon} alt="" />
@@ -188,7 +197,9 @@ const About = () => {
 
       {/* analytics */}
       <div className=" text-center">
-        <h1 className=" text-3xl">Empowering Healthcare</h1>
+        <div className="header_txt">
+          <h1 className=" text-3xl">Empowering Healthcare</h1>
+        </div>
       </div>
       <div className="container analytics  py-8">
         <div className=" analytics_card">
@@ -220,13 +231,13 @@ const About = () => {
             <p className="title_border">Emergency Helpline</p>
             <h1 className=" text-3xl font-bold my-4">Need Emergency Contact</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-              soluta rem eligendi libero saepe repudiandae delectus cupiditate
-              quasi ullam, nam assumenda architecto nisi veritatis vel minima
-              dignissimos eaque mollitia. Tenetur libero dolorem consequuntur
-              aspernatur molestiae optio, delectus harum facere officiis
-              similique perferendis id quod doloremque, amet sit minus. Rem,
-              reiciendis?
+              In critical times, every second counts. Our 24/7 emergency
+              helpline ensures immediate assistance and expert care for all your
+              urgent medical needs. Whether it’s a sudden illness, accident, or
+              any life-threatening situation, our dedicated team is always ready
+              to support you. Trust us to provide prompt and reliable help when
+              you need it the most—because your safety and well-being are our
+              top priorities.
             </p>
             <div className="emergency_helpline_sec flex justify-evenly mt-8">
               <div className="emergency_card flex ">
@@ -257,7 +268,9 @@ const About = () => {
 
       {/* how we work */}
       <div className="working_process container">
-        <h1 className=" text-center text-3xl">Our Working Process</h1>
+        <div className="header_txt">
+          <h1 className=" text-center text-3xl">Our Working Process</h1>
+        </div>
         <ul className="working_process timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
           <li>
             <div className="timeline-middle">
@@ -279,10 +292,10 @@ const About = () => {
               <time className=" font-bold text-lg">Step: 1</time>
               <div className="text-lg font-black">Find Hospitals</div>
               <p>
-                The Apple Macintosh—later rebranded as the Macintosh 128K—is the
-                original Apple Macintosh personal computer. It played a pivotal
-                role in establishing desktop publishing as a general office
-                function.
+                Search for trusted hospitals near you using our platform. We
+                offer a comprehensive list of top-rated healthcare facilities,
+                ensuring you find the right one for your needs quickly and
+                efficiently.
               </p>
             </div>
             <hr />
@@ -308,10 +321,9 @@ const About = () => {
               <time className="font-bold text-lg">Step: 2</time>
               <div className="text-lg font-black">Fill the Form</div>
               <p>
-                iMac is a family of all-in-one Mac desktop computers designed
-                and built by Apple Inc. It has been the primary part of Apple's
-                consumer desktop offerings since its debut in August 1998, and
-                has evolved through seven distinct forms
+                Complete a simple and user-friendly form to provide us with your
+                details and medical requirements. This step ensures a smooth and
+                personalized healthcare experience tailored to your needs.
               </p>
             </div>
             <hr />
@@ -337,11 +349,9 @@ const About = () => {
               <time className="font-bold text-lg">Step: 3</time>
               <div className="text-lg font-black">Book an Appointment</div>
               <p>
-                The iPod is a discontinued series of portable media players and
-                multi-purpose mobile devices designed and marketed by Apple Inc.
-                The first version was released on October 23, 2001, about 8+1⁄2
-                months after the Macintosh version of iTunes was released. Apple
-                sold an estimated 450 million iPod products as of 2022.
+                Choose a convenient time and date for your visit. Our
+                hassle-free booking system allows you to secure your appointment
+                with just a few clicks.
               </p>
             </div>
             <hr />
@@ -367,10 +377,9 @@ const About = () => {
               <time className="font-bold text-lg">Step: 4</time>
               <div className="text-lg font-black">Check-Up</div>
               <p>
-                iPhone is a line of smartphones produced by Apple Inc. that use
-                Apple's own iOS mobile operating system. The first-generation
-                iPhone was announced by then-Apple CEO Steve Jobs on January 9,
-                2007.
+                Visit the hospital for your scheduled consultation or treatment.
+                Our platform ensures you receive quality care with minimal
+                waiting times.
               </p>
             </div>
             <hr />
@@ -396,10 +405,9 @@ const About = () => {
               <time className="font-bold text-lg">Step: 5</time>
               <div className="text-lg font-black">Get Reports</div>
               <p>
-                The Apple Watch is a line of smartwatches produced by Apple Inc.
-                It incorporates fitness tracking, health-oriented capabilities,
-                and wireless telecommunication, and integrates with iOS and
-                other Apple products and services
+                Access your medical reports digitally through our secure
+                platform. Review and manage your health records anytime,
+                anywhere, for a seamless healthcare experience.
               </p>
             </div>
           </li>

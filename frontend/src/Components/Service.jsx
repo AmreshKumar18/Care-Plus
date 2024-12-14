@@ -6,7 +6,11 @@ const Service = () => {
     <>
       <div className="service_section container">
         <div>
-          <h1 className="text-center text-4xl font-bold mt-20 m-3">Services</h1>
+          <div className="header_txt">
+            <h1 className="text-center text-4xl font-bold mt-20 m-3">
+              Services
+            </h1>
+          </div>
 
           <div className="services flex text-center justify-between">
             <div className="service__appointment">

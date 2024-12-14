@@ -13,10 +13,15 @@ const Why = () => {
             Healthcare?
           </h1>
           <p className=" pb-3">
-            Care Plus has a robust presence across the healthcare ecosystem.
-            From routine wellness & preventive health care to innovative
-            life-saving treatments and diagnostic services, Apollo Hospitals has
-            touched more than 200 million lives from over 120 countries.
+            Care Plus stands out as a trusted leader in the healthcare industry,
+            offering a comprehensive range of services designed to meet all your
+            medical needs. With a strong network of experienced professionals,
+            advanced technology, and patient-centric care, we ensure top-notch
+            wellness and treatment options. Whether it's preventive health
+            checkups, specialized treatments, or cutting-edge diagnostic
+            services, Care Plus is dedicated to delivering exceptional care with
+            a personalized touch, making your health and well-being our
+            priority.
           </p>
           {/* why choose features */}
           {/* <div className=" flex justify-between mt-5">
