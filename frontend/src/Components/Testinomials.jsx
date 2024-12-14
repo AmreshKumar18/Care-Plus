@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import rightarrow from "../assets/rightarrow.png";
+import leftarrow from "../assets/leftarrow.png";
 
 const testimonials = [
   {
@@ -53,11 +55,11 @@ const Testinomials = () => {
         <h1>What Our Customers Say</h1>
         <div className="testimonial-container">
           <button onClick={prevTestimonial} className="prev-btn">
-            Previous
+            <img src={leftarrow} alt="" />
           </button>
           <Testimonial {...testimonials[currentIndex]} />
           <button onClick={nextTestimonial} className="next-btn">
-            Next
+            <img src={rightarrow} alt="" />
           </button>
         </div>
       </div>

@@ -8,7 +8,7 @@ const Faq = () => {
           <h1 className=" text-center mt-10 mb-1">
             Frequently Asked Questions
           </h1>
-          <p className=" m-auto text-center mb-7 w-2/3">
+          <p className=" m-auto text-center mb-7  sm:w-full">
             To help you navigate our site better and make your shopping
             experience easier, we have provided answers to some frequently asked
             questions below. Please call our customer service if your question

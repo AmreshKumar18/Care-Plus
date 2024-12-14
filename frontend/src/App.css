@@ -141,7 +141,8 @@ h6 {
 
 h1 {
   font-size: 32px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .testimonial-container {
@@ -149,6 +150,16 @@ h1 {
   justify-content: center;
   align-items: center;
   gap: 30px;
+}
+.next-btn > img {
+  height: 20px;
+  color: white;
+  background-color: white;
+}
+.prev-btn > img {
+  height: 20px;
+  color: white;
+  background-color: white;
 }
 
 .testimonial-card {
@@ -187,16 +198,12 @@ h1 {
 }
 
 button {
-  background-color: #007bff;
   color: white;
-  padding: 10px 15px;
+  padding: 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
+  border-radius: 50%;
 }
 
 .prev-btn {
@@ -470,7 +477,7 @@ input[type="number"]::-webkit-outer-spin-button {
   padding: 15px 10px;
   margin: auto;
   width: 300px;
-  height: 200px;
+  height: 250px;
 }
 
 .features_card h1 {
@@ -1564,6 +1571,43 @@ html {
 
 /* responsive of welcome */
 @media only screen and (max-width: 480px) {
+  .header_txt h1::before,
+  .header_txt h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    top: 50%;
+  }
+
+  .header_txt h1::before {
+    left: 300px;
+  }
+
+  .header_txt h1::after {
+    right: 300px;
+  }
+  .heading_txt h1::before,
+  .heading_txt h1::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    top: 50%;
+  }
+
+  .heading_txt h1::before {
+    left: 350px;
+  }
+
+  .heading_txt h1::after {
+    right: 350px;
+  }
+
   .right img {
     height: 400px;
   }
